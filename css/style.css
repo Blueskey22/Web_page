@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 120%;
   font-family: 'Ranga', cursive;
   color: #f7f0f0;
   background-color: #22283f;
@@ -98,10 +98,10 @@ Main Components
   text-align: center;
 }
 .Article1{
-  text-shadow: 3px 2px rgb(5, 5, 5);
+  text-shadow: 2px 2px rgb(5, 5, 5);
 }
 .Article2{
-  text-shadow: 3px 2px rgb(5, 5, 5);
+  text-shadow: 2px 2px rgb(5, 5, 5);
 }
 .cd-section:first-of-type>div::before {
   /* alert -> all scrolling effects are not visible on small devices */
