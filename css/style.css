@@ -68,7 +68,7 @@ Main Components
   text-align: center;
   padding: 2em;
 }
-.portada{font:400 140px/1em Amatic SC;text-align:center;padding-top:140px}
+.portada{font:400 100px/1em Amatic SC;text-align:center;padding-top:100px}
 .jittery span{animation:jitter 200ms linear infinite;color:#fffcf9;display:inline-block}
 @keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
 .portada{
