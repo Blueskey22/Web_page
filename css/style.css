@@ -14,10 +14,10 @@ html {
 }
 
 body {
-  font-size: 150%;
-  font-family: 'Ranga', cursive;
+ font-size: 1.6rem;
+ font-family: 'Libre Baskerville', serif;
   color: #f7f0f0;
-  background-color: #22283f;
+  background-color: #0c102056;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -64,15 +64,17 @@ Main Components
 }
 
 .covers{
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   padding: 2em;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(5, 5, 5);
 }
-.portada{font:400 80px/1em Amatic SC;text-align:center;padding-top:80px}
-.jittery span{animation:jitter 200ms linear infinite;color:#fffcf9;display:inline-block}
-@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
+
 .portada{
-  text-shadow: 3px 2px rgb(5, 5, 5);
+  text-shadow: 1px 1px rgb(5, 5, 5);
+
 }
 @keyframes textclip {
  to {
@@ -80,29 +82,27 @@ Main Components
  }
 }
 .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 4vh;
+  display: grid;
+	justify-self: center; 
+  margin: 4vh;
+  padding: 4vh;
 }
 .portada{
+  font-size: 7em;
   height: 100vh;
-  background-image: url("../img/IMG_20190518_121951_440.jpg");
+  background-image: url("../img/Consoles.jpg");
   background-size: cover;
+  display: grid;
+	justify-self: center; 
+  padding: 4vh;
 }
-.covers{
-   text-transform: uppercase;
-   text-shadow: 3px 2px rgb(5, 5, 5);
-}
-.projects{
-  font-size: 2vw;
-  text-align: center;
-}
+
+
 .Article1{
-  text-shadow: 2px 2px rgb(5, 5, 5);
+  font-size: 150%;
+  text-shadow: 1px 1px rgb(5, 5, 5);
 }
-.Article2{
-  text-shadow: 2px 2px rgb(5, 5, 5);
-}
+
 .cd-section:first-of-type>div::before {
   /* alert -> all scrolling effects are not visible on small devices */
   position: absolute;
@@ -116,21 +116,19 @@ Main Components
 }
 
 .cd-section:nth-of-type(2)>div {
-  background-image: url("../img/img-11.jpg");
-background-size: cover;
+  background-image: url("../img/IMG_20190518_121951_440.jpg");
+  background-size: cover;
 }
 
 .cd-section:nth-of-type(3)>div {
-  background-image: url("../img/img-10.jpg");
+  background-image: url("../img/u-tad.png");
   background-size: cover;
 }
 .cd-section:nth-of-type(4)>div {
-  background-image: url("../img/img-13.jpg");
+  background-image: url("../img/img-16.png");
   background-size: cover;
 }
-.cd-section:nth-of-type(5)>div {
-  background-color: #273363b6;
-}
+
 
 [data-animation="parallax"] .cd-section>div,
 [data-animation="fixed"] .cd-section>div,
