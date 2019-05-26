@@ -15,7 +15,7 @@ html {
 
 body {
  font-size: 1.6rem;
- font-family: 'Libre Baskerville', serif;
+ font-family: 'Acme', sans-serif;
   color: #f7f0f0;
   background-color: #0c102056;
   -webkit-font-smoothing: antialiased;
@@ -53,9 +53,6 @@ Main Components
 
 /*Sections*/
 
-.cd-section.visible{
- background-size: cover;
-}
 @media(min-width:500px){
   .cd-section,
   .cd-section >div{
@@ -72,10 +69,6 @@ Main Components
   text-shadow: 1px 1px rgb(5, 5, 5);
 }
 
-.portada{
-  text-shadow: 1px 1px rgb(5, 5, 5);
-
-}
 @keyframes textclip {
  to {
   background-position:150% center
@@ -84,17 +77,19 @@ Main Components
 .grid{
   display: grid;
 	justify-self: center; 
-  margin: 4vh;
-  padding: 4vh;
+  margin: auto;
+  padding: 8vw;
 }
 .portada{
-  font-size: 7em;
-  height: 100vh;
+  font-size: 11vw;
+  font-family: 'Righteous', cursive;
   background-image: url("../img/Consoles.jpg");
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(5, 5, 5);
+  margin: auto;
+  padding: 10vw;
   background-size: cover;
-  display: grid;
-	justify-self: center; 
-  padding: 4vh;
 }
 
 
