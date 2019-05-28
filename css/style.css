@@ -52,17 +52,20 @@ Main Components
 }
 
 /*Sections*/
-
-@media (min-width: 500px) {
   .cd-section {
     height: 100vh;
   }
-  .smooy{
-    width:50%; /*width of your image*/
-   height:50%; /*height of your image*/
+  .cd-section.visible{
+    height: 100vh;
+    background-image: url("../img/Consoles.jpg");
+    background-size:cover;
   }
-}
-
+  /*
+  .smooy{
+    width:50%; 
+   height:50%; 
+  }
+  */
 .covers {
   font-size: 2em;
   text-align: center;
@@ -89,13 +92,11 @@ Main Components
 .portada {
   font-size: 11vw;
   font-family: 'Righteous', cursive;
-  background-image: url("../img/Consoles.jpg");
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px rgb(5, 5, 5);
-  margin: auto;
+  margin: 0 auto;
   padding: 10vw;
-  background-size: cover;
 }
 .About{
   background-image: url("../img/IMG_20190518_121951_440.jpg");
@@ -131,7 +132,7 @@ Main Components
 }
 
 .Article1 {
-  font-size: 150%;
+  font-size: 130%;
   text-shadow: 1px 1px rgb(5, 5, 5);
 }
 .smooy{
