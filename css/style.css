@@ -57,7 +57,7 @@ Main Components
   }
   .cd-section.visible{
     height: 100vh;
-    background-image: url("../img/Consoles.jpg");
+    background-image: url("../img/img-cover.jpg");
     background-size:cover;
   }
   /*
@@ -121,12 +121,12 @@ Main Components
 }
 */
 .Working{
-  background-image: url("../img/u-tad.png");
+  background-image: url("../img/img-uni.jpg");
   background-size: cover;
   height: 100vh;
 }
 .Contact{
-  background-image: url("../img/img-16.png");
+  background-image: url("../img/img-contact.jpg");
   background-size: cover;
   height: 100vh;
 }
