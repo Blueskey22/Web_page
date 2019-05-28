@@ -14,8 +14,8 @@ html {
 }
 
 body {
- font-size: 1.6rem;
- font-family: 'Acme', sans-serif;
+  font-size: 1.6rem;
+  font-family: 'Acme', sans-serif;
   color: #f7f0f0;
   background-color: #0c102056;
   -webkit-font-smoothing: antialiased;
@@ -53,14 +53,17 @@ Main Components
 
 /*Sections*/
 
-@media(min-width:500px){
-  .cd-section,
-  .cd-section >div{
+@media (min-width: 500px) {
+  .cd-section {
     height: 100vh;
+  }
+  .smooy{
+    width:50%; /*width of your image*/
+   height:50%; /*height of your image*/
   }
 }
 
-.covers{
+.covers {
   font-size: 2em;
   text-align: center;
   padding: 2em;
@@ -70,17 +73,20 @@ Main Components
 }
 
 @keyframes textclip {
- to {
-  background-position:150% center
- }
+  to {
+    background-position: 150% center
+  }
 }
-.grid{
-  display: grid;
-	justify-self: center; 
-  margin: auto;
-  padding: 8vw;
+
+.grid {
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8vw;
+	margin-bottom: 10px;
 }
-.portada{
+
+.portada {
   font-size: 11vw;
   font-family: 'Righteous', cursive;
   background-image: url("../img/Consoles.jpg");
@@ -91,12 +97,49 @@ Main Components
   padding: 10vw;
   background-size: cover;
 }
+.About{
+  background-image: url("../img/IMG_20190518_121951_440.jpg");
+  background-size: cover;
+  height: 100vh;
+}/*
+.smooy{
+   height:183px; 
+   background-image:url('../img/IEC.jpg');
+   background-size: cover;
+   margin:10px; 
+   padding:0; 
+}
+/*
+.IEC{
+  width:8vw; 
+  height:4vw; 
+  background-image:url('../img/IEC.jpg');
+  background-size: cover;
+  margin:10px; 
+  padding:0; 
+}
+*/
+.Working{
+  background-image: url("../img/u-tad.png");
+  background-size: cover;
+  height: 100vh;
+}
+.Contact{
+  background-image: url("../img/img-16.png");
+  background-size: cover;
+  height: 100vh;
+}
 
-
-.Article1{
+.Article1 {
   font-size: 150%;
   text-shadow: 1px 1px rgb(5, 5, 5);
 }
+.smooy{
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 
 .cd-section:first-of-type>div::before {
   /* alert -> all scrolling effects are not visible on small devices */
@@ -110,20 +153,17 @@ Main Components
   text-transform: uppercase;
 }
 
+.cd-section:nth-of-type(1)>div {
+ 
+}
+
 .cd-section:nth-of-type(2)>div {
-  background-image: url("../img/IMG_20190518_121951_440.jpg");
-  background-size: cover;
+  
 }
 
 .cd-section:nth-of-type(3)>div {
-  background-image: url("../img/u-tad.png");
-  background-size: cover;
+ 
 }
-.cd-section:nth-of-type(4)>div {
-  background-image: url("../img/img-16.png");
-  background-size: cover;
-}
-
 
 [data-animation="parallax"] .cd-section>div,
 [data-animation="fixed"] .cd-section>div,
